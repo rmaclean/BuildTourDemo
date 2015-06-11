@@ -18,5 +18,10 @@
         {
             await viewModel.Load();
         }
+
+        private void ListView_ManipulationBoundaryFeedback(object sender, System.Windows.Input.ManipulationBoundaryFeedbackEventArgs e)
+        {
+            e.Handled = true;
+        }
     }
 }
